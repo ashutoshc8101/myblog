@@ -1,7 +1,5 @@
 from flask import Flask
-
 app = Flask(__name__)
 
-@app.route('/')
-def home():
-    return 'BigBlog'
+from myblog.routes.home import bp as homebp
+app.register_blueprint(homebp)
