@@ -7,3 +7,6 @@ db = SQLAlchemy(app)
 
 import myblog.db.Blog
 import myblog.db.User
+import myblog.db.Tag
+import myblog.db.Category
+import myblog.db.Comment
