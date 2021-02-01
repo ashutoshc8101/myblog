@@ -28,11 +28,23 @@ else:
         db.session.commit()
         print('Migrations successful')
     elif command == 'populate':
-        from myblog.db.Blog import Blog
-        from myblog.db import db
-        from datetime import datetime
-        for i in range(1,11):
-            blog = Blog(category='Fashion', title='Morbi dapibus condimentum', content='You can browse different tags such as multi-page, resume, video, etc. to see more CSS templates. Sed hendrerit rutrum arcu, non malesuada nisi. Sed id facilisis turpis. Donec justo elit, dapibus vel ultricies in, molestie sit amet risus. In nunc augue, rhoncus sed libero et, tincidunt tempor nisl. Donec egestas, quam eu rutrum ultrices, sapien ante posuere nisl, ac eleifend eros orci vel ante. Pellentesque vitae eleifend velit. Etiam blandit felis sollicitudin vestibulum feugiat.\n\nDonec tincidunt leo nec magna gravida varius. Suspendisse felis orci, egestas ac sodales quis, venenatis et neque. Vivamus facilisis dignissim arcu et blandit. Maecenas finibus dui non pulvinar lacinia. Ut lacinia finibus lorem vel porttitor. Suspendisse et metus nec libero ultrices varius eget in risus. Cras id nibh at erat pulvinar malesuada et non ipsum. Suspendisse id ipsum leo.', tags='Best Templates, TemplateMo', comments='a,b,c', created_by='ashutosh', created_at=datetime.now())
-            db.session.add(blog)
-        db.session.commit()
-        print('Database populated')
+        pass
+
+        # from myblog.db.Blog import Blog
+        # from myblog.db import db
+        # from myblog.db.User import User
+        # from datetime import datetime
+        # from myblog.db.Category import Category
+        # from flask.ext.bcrypt import Bcrypt
+
+        # categories = ['Fashion', 'Art', 'Music', 'Education', 'Space']
+        # with open('dummy_content.txt') as rf:
+        #     content = rf.read()
+        # for category in categories:
+        #     cat = Category(title=category, description='{} description'.format(category))
+        #     blogs = ['How to be great', 'Bad music vs good music', 'Art is a gift', 'Einstein was wrong', 'Evolution of Fashion']
+        #     for index, blog in blogs:
+        #         blog = Blog(title=blog, category=cat, content=content)
+
+        # db.session.commit()
+        # print('Database populated')
