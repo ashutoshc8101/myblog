@@ -2,3 +2,4 @@
 
 ## Techonology Stack
 - Flask
+- Python
